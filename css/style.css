@@ -1,0 +1,54 @@
+html{
+  box-sizing: border-box;
+}
+*,*::before,*::after{
+  box-sizing: inherit;
+}
+body{ 
+  padding: 0;
+  margin: 0;
+}
+.wrapper{
+  width: 400px;
+  height: 580px;
+  background-color: rgb(218, 226, 233);
+  margin: 0 auto;
+}
+.screen{
+  background-color: rgb(0, 0, 0);
+  height: 80px;
+  line-height: 80px;
+  padding: 0 10px;
+  text-align: right;
+  color: white;
+  font-size: 3rem;
+}
+.calc-btn{
+  display: grid;
+  grid-template-rows: repeat(5,1fr);
+}
+.cal-row
+{
+  display: flex;
+}
+button{
+  flex-basis: 25%;
+  display: block;
+  height: 100px;
+  border: 1px solid black;
+}
+button:last-child{
+  background-color: orange;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+button:hover{
+  background-color:rgba(204, 204, 204, 0.678) ;
+}
+.clear-btn{
+  flex-basis: 50%;
+}
+.zero-btn{
+  flex-basis: 75%;
+}
